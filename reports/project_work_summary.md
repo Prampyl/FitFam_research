@@ -1,4 +1,4 @@
-# FitFam Research Project: Work Summary
+# FitFam Research Project: Work Summary (17/09/2025)
 
 ## Project Overview
 This project aims to analyze the FitFam fitness community data to understand participation dynamics, leadership quality, and growth trends. We have successfully established a data processing pipeline, performed exploratory data analysis, and generated key insights regarding community demographics and engagement.
@@ -8,7 +8,6 @@ This project aims to analyze the FitFam fitness community data to understand par
 2.  **Data Cleaning & Connection**:
     *   Merged disparate datasets to link **Users** to **Events** they attended.
     *   Connected **Events** to **Locations** and **Cities** to understand geographic distribution.
-    *   Integrated **WeChat User** data to enrich demographic information (Gender).
     *   Handled missing values and normalized data formats (e.g., timestamps, city names).
 3.  **Analysis**:
     *   Calculated descriptive statistics for participation and leadership.
@@ -38,6 +37,4 @@ This project aims to analyze the FitFam fitness community data to understand par
     *   Useful for reviewing results without launching a Jupyter environment.
     *   Includes error handling to surface any issues during notebook execution.
 
-## Key Outputs
-*   **Unified Dataset**: A cleaned, merged dataset representing over 400,000 attendance records.
-*   **Analytical Report**: A comprehensive summary of findings (Leadership pipeline, Geographic dominance of Shanghai/Virtual, Gender demographics).
+

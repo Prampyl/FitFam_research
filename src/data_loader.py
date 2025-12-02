@@ -3,8 +3,16 @@ import json
 import os
 
 class FitFamDataLoader:
-    def __init__(self, data_dir='fitfam-json'):
-        self.data_dir = data_dir
+    def __init__(self, data_dir=None):
+        if data_dir is None:
+            # Default to looking in the project root (parent of src)
+            # If running from src, it's ../fitfam-json
+            # If running from notebooks, it's ../fitfam-json
+            # Let's try to find it relative to this file
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            self.data_dir = os.path.join(base_dir, 'fitfam-json')
+        else:
+            self.data_dir = data_dir
 
     def _load_json(self, filename):
         filepath = os.path.join(self.data_dir, filename)
@@ -51,9 +59,6 @@ class FitFamDataLoader:
 
     def load_event_user(self):
         df = self._load_json('event_user.json')
-        # checked_in might be boolean or timestamp or int. 
-        # Based on preview it was null, so maybe it's a timestamp or boolean 1/0.
-        # We will inspect it later, but loading it as is for now.
         return df
 
     def load_cities(self):
@@ -62,6 +67,14 @@ class FitFamDataLoader:
     def load_wechat_users(self):
         df = self._load_json('wechat_users.json')
         return df
+
+    def load_categories(self):
+        df = self._load_json('categories.json')
+        df['name_en'] = self._parse_json_field(df, 'name', 'en')
+        return df
+
+    def load_category_event(self):
+        return self._load_json('category_event.json')
 
     def get_unified_data(self):
         """
@@ -79,7 +92,29 @@ class FitFamDataLoader:
         locations = self.load_locations()
         event_user = self.load_event_user()
         cities = self.load_cities()
-
+        
+        # Load Categories
+        categories = self.load_categories()
+        category_event = self.load_category_event()
+        
+        # Merge Categories with Events
+        # category_event has event_id, category_id
+        # We merge category_event with categories to get names
+        cat_merged = category_event.merge(categories[['id', 'name_en']], left_on='category_id', right_on='id', suffixes=('', '_cat'))
+        cat_merged = cat_merged.rename(columns={'name_en': 'category_name'})
+        
+        # Note: An event might have multiple categories. For simplicity in this unified view, 
+        # we might duplicate rows or just take the first one. 
+        # Let's aggregate categories per event to avoid exploding the dataset if 1 event has multiple categories.
+        # But looking at the data, it seems 1:1 or 1:many. 
+        # Let's keep it simple: merge categories to events. If an event has multiple categories, 
+        # we will have multiple rows for that event in the 'events_cat' dataframe.
+        # However, get_unified_data returns attendance. If we merge 1 event -> 2 categories, 
+        # we will get 2 rows per attendance, which might skew counts.
+        # Better approach: Aggregate category names into a single string per event.
+        
+        cat_agg = cat_merged.groupby('event_id')['category_name'].apply(lambda x: ', '.join(x)).reset_index()
+        
         # Merge Events with Locations
         events_loc = events.merge(locations[['id', 'name_en', 'city_id']], left_on='location_id', right_on='id', suffixes=('', '_loc'))
         events_loc = events_loc.rename(columns={'name_en': 'location_name', 'id_loc': 'location_id_redundant'})
@@ -87,6 +122,10 @@ class FitFamDataLoader:
         # Merge with Cities
         events_loc = events_loc.merge(cities[['id', 'name']], left_on='city_id', right_on='id', suffixes=('', '_city'))
         events_loc = events_loc.rename(columns={'name': 'city_name'})
+        
+        # Merge with Categories
+        # events_loc has 'id' (event id), cat_agg has 'event_id'
+        events_loc = events_loc.merge(cat_agg, left_on='id', right_on='event_id', how='left')
 
         # Merge Attendance with Events
         # event_user has event_id, user_id

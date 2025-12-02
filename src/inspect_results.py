@@ -1,9 +1,13 @@
 import json
 import sys
+import os
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-with open('d:/shanghai/SR01/FitFam_research/analysis_output.ipynb', 'r', encoding='utf-8') as f:
+# Path relative to src/
+nb_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'notebooks', 'analysis_output.ipynb')
+
+with open(nb_path, 'r', encoding='utf-8') as f:
     nb = json.load(f)
 
 for cell in nb['cells']:
