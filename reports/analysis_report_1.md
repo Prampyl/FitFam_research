@@ -3,103 +3,103 @@
 ---
 
 ## Executive Summary
-Ce rapport analyse les données de la communauté FitFam pour comprendre la dynamique de participation, la qualité du leadership et les tendances de croissance. L'analyse couvre **405 861 enregistrements de présence** répartis sur **37 630 événements** et **128 128 utilisateurs**.
+This report analyzes FitFam community data to understand participation dynamics, leadership quality, and growth trends. The analysis covers **405,861 attendance records** across **37,630 events** and **128,128 users**.
 
-### **Principales conclusions**
-- **Croissance** : Shanghai domine avec **63 % de l'activité**, suivie par la communauté **Virtuelle (18 %)** et Pékin (8 %).
-- **Démographie** : Parmi les utilisateurs dont le genre est connu, **63 % sont des femmes**, indiquant une base communautaire fortement féminine.
-- **Fidélisation** : **59 % des utilisateurs** ont participé à plus d'un événement.
-- **Leadership** : **449 leaders actifs** sont identifiés. Un vivier de **1 637 "Power Users"** (50+ événements) existe, représentant des leaders potentiels.
-
----
-
-## 1. Participation & Croissance
-
-### **Répartition géographique**
-Shanghai reste le cœur de FitFam, mais la catégorie **"Virtuelle"** s'impose comme un acteur majeur, probablement en raison de l'accessibilité ou des changements liés à la pandémie.
-
-
-Répartition géographique des check-ins
-
-
-| Ville       | Check-ins | % du total |
-|-------------|-----------|------------|
-| Shanghai    | 255 939   | 63,1 %     |
-| Virtuel     | 75 310    | 18,6 %     |
-| Pékin       | 35 205    | 8,7 %      |
-| Changzhou   | 23 988    | 5,9 %      |
-| Hangzhou    | 6 113     | 1,5 %      |
+### Key Findings
+- **Growth**: Shanghai is the dominant hub (**63% of activity**), followed by the **Virtual community (18%)** and Beijing (**8%**).
+- **Demographics**: Among users with known gender, **63% are Female**, indicating a strong female-led community.
+- **Retention**: **59% of users** have attended more than one event.
+- **Leadership**: **449 active leaders** exist, with a pipeline of **1,637 "Power Users"** (50+ events) as potential future leaders.
 
 ---
 
-### **Démographie**
-Les données de genre sont disponibles pour **~50 % des utilisateurs** (en raison des paramètres de confidentialité de WeChat).
+## 1. Participation & Growth
+
+### Geographic Distribution
+Shanghai remains the core of FitFam, but the **"Virtual"** location has emerged as a major component, likely driven by accessibility or pandemic-era shifts.
 
 
-Répartition par genre
+Geographic Distribution of Check-ins
 
 
-| Genre    | % du total | % des connus |
-|----------|------------|--------------|
-| Féminin  | 31,3 %     | 63,1 %       |
-| Masculin | 18,3 %     | 36,9 %       |
-| Inconnu  | 50,5 %     | -            |
-
-**Insight** : FitFam attire fortement les femmes, ce qui suggère que le marketing et les types d'événements doivent continuer à cibler ce public, tout en explorant des moyens d'engager davantage d'hommes si la diversité est un objectif.
-
----
-
-## 2. Analyse du Leadership
-Le leadership est la colonne vertébrale de FitFam.
-- **Leaders actifs** : **449 utilisateurs** ont dirigé au moins un événement.
-- **Top Leaders** : Les leaders les plus dévoués ont dirigé **plus de 700 événements chacun**.
-- **Pipeline de leadership** :
-  - **1 637 utilisateurs** ont participé à **plus de 50 événements**.
-  - Ces "Power Users" sont des candidats idéaux pour une formation au leadership.
-
-**Recommandation** : Mettre en place un programme **"Road to Leadership"** ciblant les 1 600+ Power Users. Même un taux de conversion de 10 % augmenterait le vivier de leaders de **~35 %**.
+| City       | Check-ins | % of Total |
+|------------|-----------|------------|
+| Shanghai   | 255,939   | 63.1%      |
+| Virtual    | 75,310    | 18.6%      |
+| Beijing    | 35,205    | 8.7%       |
+| Changzhou  | 23,988    | 5.9%       |
+| Hangzhou   | 6,113     | 1.5%       |
 
 ---
 
-## 3. Fidélisation & Engagement
-- **Taux de rétention global** : **59,2 %** (utilisateurs participant à plus d'un événement).
-- **Power Users** : **4 674 utilisateurs** ont participé à **plus de 10 événements**.
-- **Analyse de cohorte** (basée sur l'inspection visuelle des heatmaps de rétention) :
-  - La rétention est la plus élevée dans les **1-2 premiers mois** après l'adhésion.
-  - Les événements **"Virtuels"** montrent des schémas de rétention différents, souvent avec une fréquence plus élevée mais potentiellement une moindre création de liens communautaires à long terme par rapport aux événements physiques.
+### Demographics
+Gender data is available for **~50% of users** (due to WeChat privacy settings).
+
+
+Gender Distribution
+
+
+| Gender   | % of Total | % of Known |
+|----------|------------|------------|
+| Female   | 31.3%      | 63.1%      |
+| Male     | 18.3%      | 36.9%      |
+| Unknown  | 50.5%      | -          |
+
+**Insight**: FitFam strongly appeals to women, suggesting marketing and event types should continue catering to this demographic while exploring ways to engage more men if diversity is a goal.
 
 ---
 
-## 4. Analyse par Catégorie
-L'activité de FitFam est fortement centrée sur les entraînements à haute intensité, mais il existe une diversité significative selon le type de lieu.
+## 2. Leadership Analysis
+Leadership is the backbone of FitFam.
+- **Active Leaders**: **449 users** have led at least one event.
+- **Top Leaders**: The most dedicated leaders have led **over 700 events each**.
+- **Leadership Pipeline**:
+  - **1,637 users** have attended **50+ events**.
+  - These "Power Users" are prime candidates for leadership training.
 
-### **Top Catégories**
-
-Top 3 des catégories par check-ins
-
-
-| Catégorie                  | Check-ins |
-|----------------------------|-----------|
-| HIIT                       | 211 971   |
-| Bien-être / Yoga / Pilates | 53 258    |
-| Course à pied              | 51 520    |
-
-### **Préférences : Ville vs. Virtuel**
-- **Shanghai** : Préfère fortement le **HIIT (141k)** et la **course à pied (47k)**.
-- **Virtuel** : La catégorie phare est le **Bien-être / Yoga / Pilates (36k)**, suivie du **HIIT (26k)**. Cela suggère que la plateforme virtuelle répond à un besoin différent (flexibilité, pleine conscience) par rapport aux lieux physiques.
+**Recommendation**: Implement a **"Road to Leadership"** program targeting the 1,600+ Power Users. Even a **10% conversion rate** would increase the leadership pool by **~35%**.
 
 ---
 
-## 5. Recommandations
+## 3. Retention & Engagement
+- **Overall Retention Rate**: **59.2%** (users attending >1 event).
+- **Power Users**: **4,674 users** have attended **10+ events**.
+- **Cohort Analysis** (based on visual inspection of retention heatmaps):
+  - Retention is highest in the **first 1-2 months** after joining.
+  - **"Virtual" events** show different retention patterns, often with higher frequency but potentially lower long-term community bonding compared to physical events.
 
-### **Stratégiques**
-- **Capitaliser sur le succès du "Virtuel"** : La communauté virtuelle est la **2ᵉ plus grande "ville"**. Traitez-la comme une région distincte avec ses propres leaders et stratégie d'engagement.
-- **Formaliser le pipeline de leadership** : Contactez proactivement les **1 637 utilisateurs** avec 50+ check-ins. Proposez-leur des rôles d'"Assistant Leader" pour faciliter la transition vers un leadership complet.
+---
 
-### **Opérationnelles**
-- **Qualité des données** :
-  - **Genre/Anniversaire** : Encouragez les utilisateurs à mettre à jour leurs profils pour une meilleure personnalisation.
-  - **Cohérence des check-ins** : Assurez-vous que tous les lieux utilisent le système de check-in numérique pour capturer les **40 % de données de genre "inconnues"** (si corrélées avec un suivi manuel).
+## 4. Category Analysis
+FitFam's activity is heavily centered around high-intensity workouts, but there is significant diversity depending on location type.
 
-### **Croissance**
-- **Expansion dans les villes de deuxième rang** : **Changzhou (24k check-ins)** montre que FitFam peut prospérer en dehors des villes de premier rang. Répliquez le modèle de Changzhou (probablement basé sur un leadership local fort) dans des villes comme **Hangzhou** et **Suzhou**.
+### Top Categories
+
+Top 3 Categories by Check-ins
+
+
+| Category                  | Check-ins |
+|---------------------------|-----------|
+| HIIT                      | 211,971   |
+| Wellness / Yoga / Pilates | 53,258    |
+| Running                    | 51,520    |
+
+### City vs. Virtual Preferences
+- **Shanghai**: Strongly prefers **HIIT (141k)** and **Running (47k)**.
+- **Virtual**: The top category is **Wellness / Yoga / Pilates (36k)**, followed by **HIIT (26k)**. This suggests the Virtual platform serves a different user need (flexibility, mindfulness) compared to physical locations.
+
+---
+
+## 5. Recommendations
+
+### Strategic
+- **Leverage the "Virtual" Success**: The Virtual community is the **2nd largest "city"**. Treat it as a distinct region with its own leaders and engagement strategy.
+- **Formalize the Leadership Pipeline**: Proactively reach out to the **1,637 users** with 50+ check-ins. Offer them **"Assistant Leader"** roles to bridge the gap to full leadership.
+
+### Operational
+- **Data Quality**:
+  - **Gender/Birthday**: Encourage users to update profiles for better personalization.
+  - **Check-in Consistency**: Ensure all locations use the digital check-in system to capture the **40% "Unknown" gender data** (if correlated with manual tracking).
+
+### Growth
+- **Expand in Tier 2 Cities**: **Changzhou (24k check-ins)** shows FitFam can thrive outside tier-1 cities. Replicate the Changzhou model (likely strong local leadership) in cities like **Hangzhou** and **Suzhou**.
