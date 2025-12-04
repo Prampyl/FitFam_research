@@ -5,10 +5,6 @@ import os
 class FitFamDataLoader:
     def __init__(self, data_dir=None):
         if data_dir is None:
-            # Default to looking in the project root (parent of src)
-            # If running from src, it's ../fitfam-json
-            # If running from notebooks, it's ../fitfam-json
-            # Let's try to find it relative to this file
             base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             self.data_dir = os.path.join(base_dir, 'fitfam-json')
         else:
@@ -103,15 +99,6 @@ class FitFamDataLoader:
         cat_merged = category_event.merge(categories[['id', 'name_en']], left_on='category_id', right_on='id', suffixes=('', '_cat'))
         cat_merged = cat_merged.rename(columns={'name_en': 'category_name'})
         
-        # Note: An event might have multiple categories. For simplicity in this unified view, 
-        # we might duplicate rows or just take the first one. 
-        # Let's aggregate categories per event to avoid exploding the dataset if 1 event has multiple categories.
-        # But looking at the data, it seems 1:1 or 1:many. 
-        # Let's keep it simple: merge categories to events. If an event has multiple categories, 
-        # we will have multiple rows for that event in the 'events_cat' dataframe.
-        # However, get_unified_data returns attendance. If we merge 1 event -> 2 categories, 
-        # we will get 2 rows per attendance, which might skew counts.
-        # Better approach: Aggregate category names into a single string per event.
         
         cat_agg = cat_merged.groupby('event_id')['category_name'].apply(lambda x: ', '.join(x)).reset_index()
         
