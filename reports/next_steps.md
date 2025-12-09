@@ -5,20 +5,30 @@
 **What are the key determinants of user retention in the FitFam community, and how can we strengthen long‑term participant loyalty across physical and virtual locations in China?**
 
 
-## Three Sub‑Questions
+## Five Sub‑Questions (One per Group Member)
 
-1. **User factors:** Which user characteristics (early frequency, gender, city, category preference, join month) most influence retention?
-2. **Event/leader factors:** How do event‑level features (leader consistency/quality, category, virtual vs physical, weekday/weekend) affect retention?
-3. **Behavioral patterns:** What behavioral trajectories distinguish loyal users from drop‑outs (early‑engagement patterns, inactivity windows, progression toward power‑user status)?
+1. **User Consistency:** How does early attendance frequency and consistency predict long-term retention?
+2. **Leadership Quality:** How does the consistency and "quality" of leadership impact participant retention?
+3. **Workout Type & Growth:** Which workout categories act as the strongest drivers for community growth and retention?
+4. **Environmental Factors:** How do external conditions (temperature, pollution, seasonality) influence attendance and drop-off?
+5. **Special Events:** Do "Special Events" (social runs, holiday events) successfully re-engage users and reduce churn?
 
 ---
 
-## Hypotheses (Testable)
+## Hypotheses (Testable & Assignable)
 
-* **H1 — Early frequency:** Users with ≥2 sessions in their first 14 days have a higher probability of long‑term retention.
-* **H2 — Leader influence:** Attendance under high‑consistency leaders correlates with higher retention.
-* **H3 — Virtual vs physical:** Virtual‑only participants show different retention curves (short‑term boost, lower long‑term stability).
-* **H4 — Category effect:** Low‑intensity categories (Yoga/Wellness) retain beginners better than high‑intensity ones (HIIT).
+> *Each group member take ownership of one hypothesis.*
+
+* **H1 — Early Habit Formation:** Users who attend at least 3 sessions in their first 14 days (high consistency) are significantly more likely to remain active after 3 months than those who attend sporadically.
+    * *[Feedback Fabien: "Consistency of those who participate (days, month)"]*
+* **H2 — Leadership Impact:** Retention rates are higher for cohorts that attend sessions led by "High Quality" leaders (defined by high consistency, tenure, and rating proxies) compared to sporadic leaders.
+    * *[Feedback Fabien: "Quality of leadership how to rate them"]*
+* **H3 — Workout "Gateway" Effect:** Specific workout categories (e.g., Social Runs vs. Technical HIIT) yield higher long-term retention and are more effective at converting newcomers into regulars.
+    * *[Feedback Fabien: "Qu'est ce qui font growth la participation (les workouts qui marchent le mieux pour la retention)"]*
+* **H4 — Environmental Resilience:** Extreme environmental conditions (high temperature, pollution) serve as a loyalty filter: users who attend during these times show higher long-term retention, while casual users exhibit strong seasonal churn.
+    * *[Feedback Fabien: "Grosses question (temperature elevee ou pas, pollution ou pas)... est ce que des gens ne s'entraine que l'été ou l'hiver"]*
+* **H5 — Social Anchoring (Special Events):** Participation in "Special Events" (e.g., Halloween Run, Breakfast & Burpees) creates a social anchor, significantly reducing churn probability in the subsequent month compared to standard sessions.
+    * *[Feedback Fabien: "Special events : exemple: halloween run... est ce que ces events créer de la retention"]*
 
 ---
 
