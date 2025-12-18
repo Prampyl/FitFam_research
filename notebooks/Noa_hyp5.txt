@@ -1,0 +1,57 @@
+﻿📄 Rapport d'Analyse : Impact du Réengagement par Événements Spéciaux (FITFAM)
+
+
+
+
+Problématique
+"Do 'Special Events' (social runs, holiday events) successfully re-engage users and reduce churn?"
+(Les événements spéciaux parviennent-ils à réengager les utilisateurs et à réduire le taux de désabonnement ?)
+
+
+
+
+Méthodologie
+Terme
+	Définition Utilisée dans l'Analyse
+	Churn (Désabonnement)
+	Absence d'activité (sessions) pendant plus de 30 jours.
+	Événement Spécial (Special Event)
+	Événement appartenant aux catégories : Social, Social Event ou once off/ event only (événement unique/non récurrent).
+	Réengagement
+	Première participation à un événement qui survient après une période de Churn (> $30$ jours d'inactivité).
+	Mesure d'Impact (Re-retention)
+	Taux de rétention et nombre de sessions dans les $90$ jours suivant l'événement de réengagement (pour mesurer l'effet durable).
+	Phase 1 & 2 : Traitement Algorithmique (Re-engagement & Churn)
+L'ensemble des données d'événements et de participations a été fusionné et analysé temporellement pour identifier les périodes de désabonnement et de réengagement.
+Cohorte Analysée
+L'analyse porte sur les événements de réengagement qui disposaient d'une fenêtre complète de 90 jours de suivi pour mesurer la rétention post-réengagement.
+Type d'Événement
+	Nombre Total de Réengagements Suivis
+	Événement Régulier
+	20 734
+	Événement Spécial
+	1 605
+	Total
+	22 339
+	Phase 3 : Restitution et Matrice d'Impact
+Le tableau et le graphique ci-dessous comparent l'efficacité de l'événement qui a permis le réengagement (Événement Spécial vs. Événement Régulier) sur une période de 90 jours (similaire à la mesure M3 du dossier de Jules).
+Comparaison de l'Impact du Réengagement (Post-90 jours)
+Type d'Événement de Réengagement
+	Taux de Rétention M3 (Post-Réengagement)
+	Sessions Moyennes Post-Réengagement
+	Événement Régulier
+	70.24%
+	5.65
+	Événement Spécial
+	59.19%
+	4.73
+	Matrice d'Impact Growth vs Loyalty (Réengagement)
+L'image ci-dessous illustre la différence d'efficacité entre les deux types d'événements.
+  Conclusion et Réponse à la Problématique
+Les événements spéciaux (Social Events, Once Off/Event Only) sont moins efficaces pour réengager durablement les utilisateurs et réduire le taux de désabonnement.
+1. Taux de Rétention : Les utilisateurs réengagés par un Événement Régulier ont un taux de rétention 90 jours plus élevé (70.24%) que ceux réengagés par un Événement Spécial (59.19%).
+2. Fréquence d'Activité : De même, les utilisateurs réengagés par un Événement Régulier reviennent à une fréquence plus élevée, avec 5.65 sessions en moyenne dans les 90 jours, contre seulement 4.73 sessions pour le groupe des Événements Spéciaux.
+Interprétation :
+* Les Événements Spéciaux attirent une certaine quantité d'utilisateurs en désabonnement, mais ils semblent agir comme un "one-off injection" plutôt qu'un catalyseur de retour à une routine régulière.
+* Le succès du Réengagement par Événements Réguliers suggère que les utilisateurs qui reviennent spontanément à des sessions de routine (HIIT, Running, Yoga, etc.) sont ceux qui sont le plus susceptibles d'intégrer à nouveau l'application dans leurs habitudes à long terme.
+Pour une stratégie de réengagement durable, FITFAM devrait concentrer ses efforts sur la facilitation du retour aux Événements Réguliers plutôt que de s'appuyer uniquement sur des Événements Spéciaux pour inverser le désabonnement.
