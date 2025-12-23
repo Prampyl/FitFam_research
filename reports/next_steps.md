@@ -21,6 +21,8 @@
 
 * **H1 — Early Habit Formation:** Users who attend at least 3 sessions in their first 14 days (high consistency) are significantly more likely to remain active after 3 months than those who attend sporadically.
     * *[Feedback Fabien: "Consistency of those who participate (days, month)"]*
+
+    New : High early engagement, defined by both frequency and regularity of attendance in the first 14 days, is a positive predictor of long-term retention (active status > 3 months).
 * **H2 — Leadership Impact:** Retention rates are higher for cohorts that attend sessions led by "High Quality" leaders (defined by high consistency, tenure, and rating proxies) compared to sporadic leaders.
     * *[Feedback Fabien: "Quality of leadership how to rate them"]*
 * **H3 — Workout "Gateway" Effect:** Specific workout categories (e.g., Social Runs vs. Technical HIIT) yield higher long-term retention and are more effective at converting newcomers into regulars.
