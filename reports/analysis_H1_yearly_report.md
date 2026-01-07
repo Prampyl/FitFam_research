@@ -1,15 +1,29 @@
 # Rapport d'Analyse Exploratoire H1 : Par Année (2023, 2024, 2025)
 
-## Description du Code
+### Redéfinition des Métriques de Régularité
 
-### 1. Chargement des Données
-Le code commence par importer les bibliothèques nécessaires (pandas, numpy, matplotlib, seaborn, etc.) et charge les données via le module `data_loader`. Les données sont ensuite analysées séparément pour chaque année (2023, 2024, 2025).
+Pour mieux comprendre les comportements des utilisateurs, deux métriques principales de régularité ont été redéfinies et calculées :
 
-### 2. Analyse par Année
+1. **Régularité par Catégorie** :
+   - Cette métrique mesure la spécialisation des utilisateurs dans certaines catégories d'activités.
+   - **Calcul** :
+     - On calcule la proportion des événements auxquels un utilisateur participe dans chaque catégorie.
+     - Une moyenne pondérée est ensuite calculée pour refléter la concentration des activités dans une ou plusieurs catégories spécifiques.
+     - Une valeur plus faible indique une spécialisation accrue, tandis qu'une valeur plus élevée reflète une participation plus diversifiée.
+
+2. **Régularité Temporelle** :
+   - Cette métrique évalue l'équilibre des activités des utilisateurs entre les jours de semaine et le week-end.
+   - **Calcul** :
+     - On divise les événements en deux groupes : ceux ayant lieu en semaine et ceux ayant lieu le week-end.
+     - La régularité temporelle est calculée comme l'écart-type des participations entre ces deux périodes.
+     - Une valeur plus faible indique un meilleur équilibre, tandis qu'une valeur plus élevée reflète une concentration des activités sur une période spécifique.
+
+
+## Analyse par Année
 Pour chaque année :
 - Les données sont filtrées pour inclure uniquement les événements de l'année concernée.
 - Les métriques de régularité (par catégorie et temporelle) sont calculées.
-- Des tests statistiques sont effectués pour comparer les groupes retenus et non retenus.
+- Des tests statistiques et un test de Mann-Whitney sont effectués pour comparer les groupes retenus et non retenus.
 - Les résultats sont sauvegardés dans des fichiers CSV distincts.
 
 ---
